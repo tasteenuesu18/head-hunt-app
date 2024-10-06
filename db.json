@@ -1,0 +1,17 @@
+{
+  "featureOptions": [
+    { "label": "Bluetooth", "value": "Bluetooth" },
+    { "label": "ノイズキャンセリング", "value": "ノイズキャンセリング" },
+    { "label": "防水", "value": "防水" }
+  ],
+  "priceOptions": [
+    { "label": "0～5000円", "value": [0, 5000] },
+    { "label": "5000～10000円", "value": [5000, 10000] },
+    { "label": "10000～20000円", "value": [10000, 20000] }
+  ],
+  "manufacturerOptions": [
+    { "label": "Sony", "value": "Sony" },
+    { "label": "Panasonic", "value": "Panasonic" },
+    { "label": "Bose", "value": "Bose" }
+  ]
+}
