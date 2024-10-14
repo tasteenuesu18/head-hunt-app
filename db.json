@@ -1,8 +1,8 @@
 {
   "featureOptions": [
-    { "label": "Bluetooth", "discription": "" },
-    { "label": "ノイズキャンセリング", "discription": "" },
-    { "label": "防水", "discription": "" }
+    { "label": "Bluetooth", "featurecode": "1", "discription": "" },
+    { "label": "ノイズキャンセリング", "featurecode": "2", "discription": "" },
+    { "label": "防水", "featurecode": "3", "discription": "" }
   ],
   "priceOptions": [
     { "label": "0～4999円", "minPrice": 0, "maxPrice": 4999 },
@@ -10,9 +10,9 @@
     { "label": "10000～20000円", "minPrice": 10000, "maxPrice": 14999 },
     { "label": "10000～20000円", "minPrice": 15000, "maxPrice": 20000 }
   ],
-  "manufacturerOptions": [
-    { "label": "Sony", "discription": "" },
-    { "label": "Panasonic", "discription": "" },
-    { "label": "Bose", "discription": "" }
+  "makerOptions": [
+    { "label": "Sony", "makercode": "1", "discription": "" },
+    { "label": "Panasonic", "makercode": "2", "discription": "" },
+    { "label": "Bose", "makercode": "3", "discription": "" }
   ]
 }
