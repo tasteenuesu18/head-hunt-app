@@ -6,7 +6,7 @@
   ],
   "priceOptions": [
     { "label": "0～4999円", "minPrice": 0, "maxPrice": 4999 },
-    { "label": "5000～9999円", "minPrice": 5000, "maxPrice": 9999},
+    { "label": "5000～9999円", "minPrice": 5000, "maxPrice": 9999 },
     { "label": "10000～20000円", "minPrice": 10000, "maxPrice": 14999 },
     { "label": "10000～20000円", "minPrice": 15000, "maxPrice": 20000 }
   ],
@@ -14,5 +14,43 @@
     { "label": "Sony", "makercode": "1", "discription": "" },
     { "label": "Panasonic", "makercode": "2", "discription": "" },
     { "label": "Bose", "makercode": "3", "discription": "" }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Earbuds",
+      "image_path": "../assets/media/product/wireless_earbuds.jpg",
+      "price": 9999,
+      "release_date": "2023-06-15"
+    },
+    {
+      "id": 2,
+      "name": "Noise Cancelling Headphones",
+      "image_path": "../assets/media/product/noise_cancelling_headphones.jpg",
+      "price": 19999,
+      "release_date": "2024-01-10"
+    },
+    {
+      "id": 3,
+      "name": "Portable Bluetooth Speaker",
+      "image_path": "../assets/media/product/bluetooth_speaker.jpg",
+      "price": 7999,
+      "release_date": "2023-12-05"
+    },
+    {
+      "id": 4,
+      "name": "Smart Soundbar",
+      "image_path": "../assets/media/product/smart_soundbar.jpg",
+      "price": 24999,
+      "release_date": "2023-11-20"
+    },
+    {
+      "id": 5,
+      "name": "High-Resolution Audio Player",
+      "image_path": "../assets/media/product/audio_player.jpg",
+      "price": 15999,
+      "release_date": "2023-10-01"
+    }
   ]
 }
