@@ -123,7 +123,7 @@
         {
           "path": "/images/dummy1-sub2-600X600.png",
           "order": 3
-        }
+        },
         {
           "path": "/images/dummy1-sub3-600X600.png",
           "order": 4
@@ -131,7 +131,7 @@
         {
           "path": "/images/dummy1-sub4-600X600.png",
           "order": 5
-        },
+        }
       ],
       "price": 10980,
       "popularity": 23,
