@@ -19,7 +19,7 @@
     {
       "id": 1,
       "name": "SuperSound X100",
-      "imagePath": "/images/supersound_x100.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 14999,
       "releaseDate": "2023-05-01",
       "popularity": 85,
@@ -28,7 +28,7 @@
     {
       "id": 2,
       "name": "BassMaster Pro",
-      "imagePath": "/images/bassmaster_pro.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 19999,
       "releaseDate": "2022-11-10",
       "popularity": 92,
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "name": "ClearTune V2",
-      "imagePath": "/images/cleartune_v2.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 12999,
       "releaseDate": "2023-02-15",
       "popularity": 78,
@@ -46,7 +46,7 @@
     {
       "id": 4,
       "name": "NoiseBlocker Z50",
-      "imagePath": "/images/noiseblocker_z50.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 17999,
       "releaseDate": "2023-03-20",
       "popularity": 88,
@@ -55,7 +55,7 @@
     {
       "id": 5,
       "name": "AudioMax Elite",
-      "imagePath": "/images/audiomax_elite.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 24999,
       "releaseDate": "2022-09-05",
       "popularity": 95,
@@ -64,7 +64,7 @@
     {
       "id": 6,
       "name": "BassBoomer X2",
-      "imagePath": "/images/bassboomer_x2.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 15999,
       "releaseDate": "2023-06-10",
       "popularity": 82,
@@ -73,7 +73,7 @@
     {
       "id": 7,
       "name": "ClearWave 360",
-      "imagePath": "/images/clearwave_360.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 13999,
       "releaseDate": "2023-01-25",
       "popularity": 80,
@@ -82,7 +82,7 @@
     {
       "id": 8,
       "name": "StudioMaster HD",
-      "imagePath": "/images/studiomaster_hd.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 27999,
       "releaseDate": "2022-12-15",
       "popularity": 91,
@@ -91,7 +91,7 @@
     {
       "id": 9,
       "name": "TrebleBoost S5",
-      "imagePath": "/images/trebleboost_s5.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 11999,
       "releaseDate": "2023-04-05",
       "popularity": 76,
@@ -100,11 +100,54 @@
     {
       "id": 10,
       "name": "DeepBass Ultra",
-      "imagePath": "/images/deepbass_ultra.jpg",
+      "imagePath": "/images/dummy1-600X600.png",
       "price": 18999,
       "releaseDate": "2023-07-01",
       "popularity": 87,
       "reviewCount": 140
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "ワイヤレスイヤホンX1",
+      "images": [
+        {
+          "path": "/images/dummy1-600X600.png",
+          "order": 1
+        },
+        {
+          "path": "/images/dummy1-sub1-600X600.png",
+          "order": 2
+        },
+        {
+          "path": "/images/dummy1-sub2-600X600.png",
+          "order": 3
+        }
+        {
+          "path": "/images/dummy1-sub3-600X600.png",
+          "order": 4
+        },
+        {
+          "path": "/images/dummy1-sub4-600X600.png",
+          "order": 5
+        },
+      ],
+      "price": 10980,
+      "popularity": 23,
+      "description": "クリアな音質と快適な装着感を実現したワイヤレスイヤホンです。",
+      "tags": ["ワイヤレス", "Bluetooth", "ノイズキャンセリング"],
+      "review_count": 12,
+      "purchase_links": [
+        {
+          "store": "Amazon",
+          "url": "https://example.com/amazon/x1"
+        },
+        {
+          "store": "楽天市場",
+          "url": "https://example.com/rakuten/x1"
+        }
+      ]
     }
   ]
 }
