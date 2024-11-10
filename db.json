@@ -112,21 +112,11 @@
       "id": 1,
       "name": "ワイヤレスイヤホンX1",
       "images": [
-        {
-          "path": "/images/dummy1-600X600.png"
-        },
-        {
-          "path": "/images/dummy1-sub1-600X600.png"
-        },
-        {
-          "path": "/images/dummy1-sub2-600X600.png"
-        },
-        {
-          "path": "/images/dummy1-sub3-600X600.png"
-        },
-        {
-          "path": "/images/dummy1-sub4-600X600.png"
-        }
+        "/images/dummy1-600X600.png",
+        "/images/dummy1-sub1-600X600.png",
+        "/images/dummy1-sub2-600X600.png",
+        "/images/dummy1-sub3-600X600.png",
+        "/images/dummy1-sub4-600X600.png"
       ],
       "price": 10980,
       "popularity": 23,
