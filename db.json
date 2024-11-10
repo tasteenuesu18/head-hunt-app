@@ -129,8 +129,12 @@
           "url": "https://example.com/amazon/x1"
         },
         {
-          "store": "楽天市場",
+          "store": "Rakuten",
           "url": "https://example.com/rakuten/x1"
+        },
+        {
+          "store": "Google",
+          "url": ""
         }
       ]
     }
