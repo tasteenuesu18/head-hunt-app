@@ -123,20 +123,8 @@
       "description": "クリアな音質と快適な装着感を実現したワイヤレスイヤホンです。",
       "tags": ["ワイヤレス", "Bluetooth", "ノイズキャンセリング"],
       "review_count": 12,
-      "purchase_links": [
-        {
-          "store": "Amazon",
-          "url": "https://example.com/amazon/x1"
-        },
-        {
-          "store": "Rakuten",
-          "url": "https://example.com/rakuten/x1"
-        },
-        {
-          "store": "Google",
-          "url": ""
-        }
-      ]
+      "purchase_link_amazon": "https://example.com/amazon/x1",
+      "purchase_link_rakuten": "https://example.com/rakuten/x1"
     }
   ]
 }
