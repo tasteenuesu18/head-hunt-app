@@ -1,11 +1,16 @@
 <template>
     <v-form>
-        <FilterCheckbox title="機能フィルター" :options="featureOptions" v-model:selectedValues="selectedFeatures" />
+        <div>
+            <FilterCheckbox title="機能フィルター" :options="featureOptions" v-model:selectedValues="selectedFeatures" />
 
-        <FilterCheckbox title="価格フィルター" :options="priceOptions" v-model:selectedValues="selectedPriceRange" />
-
-        <FilterCheckbox title="メーカー" :options="manufacturerOptions" v-model:selectedValues="selectedManufacturers" />
-
+        </div>
+        <div>
+            <FilterCheckbox title="価格フィルター" :options="priceOptions" v-model:selectedValues="selectedPriceRange" />
+        </div>
+        <div>
+            <FilterCheckbox title="メーカーフィルター" :options="manufacturerOptions"
+                v-model:selectedValues="selectedManufacturers" />
+        </div>
         <v-btn color="primary" @click="applyFilters">検索</v-btn>
     </v-form>
 </template>
@@ -14,24 +19,38 @@
 import FilterCheckbox from '@/components/FilterCheckbox.vue';
 import { ref, onMounted } from 'vue';
 
-const selectedFeatures = ref<string[]>([]);
-const selectedManufacturers = ref<string[]>([]);
-const selectedPriceRange = ref<any[]>([]);
+const featureOptions = ref<{ label: string; option: any; }[]>([]);
+const priceOptions = ref<{ label: string; option: any; }[]>([]);
+const manufacturerOptions = ref<{ label: string; option: any; }[]>([]);
 
-const featureOptions = ref<{ label: string; value: any }[]>([]);
-const priceOptions = ref<{ label: string; value: any }[]>([]);
-const manufacturerOptions = ref<{ label: string; value: any }[]>([]);
+// Checkbox選択状態格納用配列
+const selectedFeatures = ref<boolean[]>([]);
+const selectedPriceRange = ref<boolean[]>([]);
+const selectedManufacturers = ref<boolean[]>([]);
 
 const fetchMockData = async () => {
     try {
+        // db.jsonにて用意したデータを取得する
+        // {
+        // "featureOptions",
+        //  "priceOptions",
+        //  "makerOptions"
+        // }
+
         const response = await fetch('https://raw.githubusercontent.com/tasteenuesu18/head-hunt-app/main/db.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
+
         featureOptions.value = data.featureOptions;
         priceOptions.value = data.priceOptions;
-        manufacturerOptions.value = data.manufacturerOptions;
+        manufacturerOptions.value = data.makerOptions;
+
+        selectedFeatures.value = featureOptions.value.map(() => false); // false で初期化
+        selectedPriceRange.value = priceOptions.value.map(() => false); // false で初期化
+        selectedManufacturers.value = manufacturerOptions.value.map(() => false); // false で初期化
+
     } catch (error) {
         console.error('Error fetching mock data:', error);
     }
@@ -42,14 +61,8 @@ onMounted(() => {
 });
 
 const applyFilters = () => {
-    console.log('Filters applied:', {
-        selectedFeatures: selectedFeatures.value,
-        selectedManufacturers: selectedManufacturers.value,
-        selectedPriceRange: selectedPriceRange.value,
-    });
+
 };
 </script>
 
-<style scoped>
-/* 必要に応じてカスタムスタイルを追加 */
-</style>
+<style scoped></style>

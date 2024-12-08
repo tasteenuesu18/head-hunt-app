@@ -1,22 +1,31 @@
 <template>
-    <div class="filter-container">
-        <h3>{{ title }}</h3>
-        <div class="checkbox-container">
-            <v-checkbox v-for="(option, index) in options" :key="index" label="{{ option.label }}" :value="option.value"
-                v-model="selectedValues"></v-checkbox>
-            <slot></slot>
-        </div>
+    <div>
+        <h4>{{ title }}</h4>
+        <v-checkbox hide-details='auto' density="compact" v-for="(option, index) in options" :key="index"
+            :label="option.label" v-model="selectedValues[index]" @change="emitChanges"></v-checkbox>
+
+
     </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps, defineEmits } from 'vue';
 
-defineProps<{
+const props = defineProps<{
     title: string;
-    options: { label: string; value: any }[];
-    selectedValues: any[];
+    options: { label: string; option: any }[];
+    selectedValues: boolean[];
 }>();
+
+
+const emits = defineEmits<{
+    (e: 'update:selectedValues', value: boolean[]): void;
+}>();
+
+const emitChanges = () => {
+    emits('update:selectedValues', [...props.selectedValues]);
+};
+
 </script>
 
 <style scoped></style>

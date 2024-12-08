@@ -7,11 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AppFooter: typeof import('./components/AppFooter.vue')['default']
-    AppHeader: typeof import('./components/AppHeader.vue')['default']
+    Dialogcomponent: typeof import('./components/dialogcomponent.vue')['default']
     FilterCheckbox: typeof import('./components/FilterCheckbox.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavItem: typeof import('./components/NavItem.vue')['default']
+    ProductCard: typeof import('./components/ProductCard.vue')['default']
+    ProductCarousel: typeof import('./components/ProductCarousel.vue')['default']
+    ProductPurchaseLink: typeof import('./components/ProductPurchaseLink.vue')['default']
+    ProductTag: typeof import('./components/ProductTag.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchBar: typeof import('./components/SearchBar.vue')['default']
