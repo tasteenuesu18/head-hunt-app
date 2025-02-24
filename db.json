@@ -3,91 +3,91 @@
     {
       "label": "Bluetooth",
       "featurecode": "1",
-      "discription": "",
+      "discription": "スマートフォンなどとワイヤレスで接続できる機能です",
       "showInLightMode": true
     },
     {
       "label": "ノイズキャンセリング",
       "featurecode": "2",
-      "discription": "",
+      "discription": "周囲の騒音を軽減し、静かな環境で音楽を楽しめます",
       "showInLightMode": true
     },
     {
       "label": "防水・防滴",
       "featurecode": "3",
-      "discription": "",
+      "discription": "汗や雨に強く、運動時でも安心して使用できます",
       "showInLightMode": true
     },
     {
       "label": "マルチポイント接続",
       "featurecode": "4",
-      "discription": "",
+      "discription": "複数の機器を同時に接続し、切り替えて使用できます",
       "showInLightMode": false
     },
     {
       "label": "ハイレゾ対応",
       "featurecode": "5",
-      "discription": "",
+      "discription": "CDを超える高音質な音楽再生に対応しています",
       "showInLightMode": true
     },
     {
       "label": "LDAC対応",
       "featurecode": "6",
-      "discription": "",
+      "discription": "Sonyが開発した高音質な音声コーデックに対応しています",
       "showInLightMode": false
     },
     {
       "label": "aptX対応",
       "featurecode": "7",
-      "discription": "",
+      "discription": "Qualcommが開発した高音質な音声コーデックに対応しています",
       "showInLightMode": false
     },
     {
       "label": "AAC対応",
       "featurecode": "8",
-      "discription": "",
+      "discription": "iPhoneとの接続時に高音質な音声転送が可能です",
       "showInLightMode": false
     },
     {
       "label": "外音取り込み",
       "featurecode": "9",
-      "discription": "",
+      "discription": "周囲の音を取り込んで聴くことができ、会話などに便利です",
       "showInLightMode": true
     },
     {
       "label": "ワイヤレス充電",
       "featurecode": "10",
-      "discription": "",
+      "discription": "充電ケースを置くだけで簡単に充電できます",
       "showInLightMode": true
     },
     {
       "label": "装着検知",
       "featurecode": "11",
-      "discription": "",
+      "discription": "イヤホンの装着状態を検知して自動で再生/停止します",
       "showInLightMode": false
     },
     {
       "label": "イコライザー設定",
       "featurecode": "12",
-      "discription": "",
+      "discription": "好みの音質にカスタマイズできます",
       "showInLightMode": false
     },
     {
       "label": "通話マイク搭載",
       "featurecode": "13",
-      "discription": "",
+      "discription": "ハンズフリーでの通話が可能です",
       "showInLightMode": true
     },
     {
       "label": "アプリ連携",
       "featurecode": "14",
-      "discription": "",
+      "discription": "専用アプリで詳細な設定や機能のカスタマイズが可能です",
       "showInLightMode": true
     },
     {
       "label": "空間オーディオ対応",
       "featurecode": "15",
-      "discription": "",
+      "discription": "立体的な音場を再現し、臨場感のある音楽体験が可能です",
       "showInLightMode": false
     }
   ],
