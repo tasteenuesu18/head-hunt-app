@@ -22,7 +22,7 @@
       "label": "マルチポイント接続",
       "featurecode": "4",
       "discription": "複数の機器を同時に接続し、切り替えて使用できます",
-      "showInLightMode": false
+      "showInLightMode": true
     },
     {
       "label": "ハイレゾ対応",
