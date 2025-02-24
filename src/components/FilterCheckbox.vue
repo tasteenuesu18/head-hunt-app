@@ -1,31 +1,42 @@
 <template>
-    <div>
-        <h4>{{ title }}</h4>
-        <v-checkbox hide-details='auto' density="compact" v-for="(option, index) in options" :key="index"
-            :label="option.label" v-model="selectedValues[index]" @change="emitChanges"></v-checkbox>
-
-
+    <div class="filter-section">
+        <div class="options">
+            <div v-for="(option, index) in options" :key="index" class="d-flex align-center gap-2">
+                <div class="flex-grow-1">
+                    <v-checkbox v-model="localSelectedValues[index]" :label="option.label" hide-details
+                        density="compact" />
+                </div>
+                <div class="d-flex justify-center align-center" style="width: 24px" v-if="option.discription">
+                    <v-tooltip location="right">
+                        <template v-slot:activator="{ props }">
+                            <v-icon v-bind="props" size="small" color="grey">{{ mdiHelpCircleOutline }}</v-icon>
+                        </template>
+                        {{ option.discription }}
+                    </v-tooltip>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue';
+import { defineProps, ref } from 'vue';
+import { mdiHelpCircleOutline } from '@mdi/js';
+
+interface Option {
+    label: string;
+    featurecode?: string;
+    discription?: string;
+    showInLightMode?: boolean;
+    minPrice?: number;
+    maxPrice?: number;
+    makercode?: string;
+}
 
 const props = defineProps<{
-    title: string;
-    options: { label: string; option: any }[];
+    options: Option[];
     selectedValues: boolean[];
 }>();
 
-
-const emits = defineEmits<{
-    (e: 'update:selectedValues', value: boolean[]): void;
-}>();
-
-const emitChanges = () => {
-    emits('update:selectedValues', [...props.selectedValues]);
-};
-
+const localSelectedValues = ref(props.selectedValues);
 </script>
-
-<style scoped></style>

@@ -24,4 +24,29 @@ export default createVuetify({
       mdi,
     },
   },
+  theme: {
+    themes: {
+      light: {
+        colors: {
+          primary: '#FF7043',
+          secondary: '#78909C',
+          accent: '#FFB74D',
+          background: '#F5F5F5',
+          surface: '#FFFFFF',
+          success: '#81C784',
+          warning: '#FFB74D',
+          error: '#E57373',
+          info: '#64B5F6',
+        },
+      },
+      dark: {
+        colors: {
+          primary: '#FF8A65',
+          secondary: '#90A4AE',
+          background: '#424242',
+          surface: '#616161',
+        },
+      },
+    },
+  },
 });
